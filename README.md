@@ -1,3 +1,5 @@
+#DON'T USE THIS VERSION! ITS BROKEN.
+
 React Bootstrap Modal
 ===================================
 

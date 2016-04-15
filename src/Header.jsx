@@ -32,6 +32,7 @@ class ModalHeader extends React.Component {
             className='close'
             aria-label={this.props['aria-label'] || 'Close Modal'}
             style={{ marginTop: -2 }}
+            onClick={this.props.onClose}
           >
             <span aria-hidden="true">
               &times;

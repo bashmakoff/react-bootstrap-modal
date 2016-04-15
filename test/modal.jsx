@@ -95,6 +95,16 @@ describe('Modal', () => {
     })
   })
 
+  it('should trigger onClose by close button', done => {
+    inst = $(
+        <Modal show backdrop='static'>
+          <Modal.Header closeBtn onClose={() => done()}/>
+        </Modal>
+    ).render()
+
+    $(inst[0].dialog).find('.close').trigger('click')
+  })
+
   describe('Dismiss', ()=> {
 
     it('should trigger onHide in parent', done => {
